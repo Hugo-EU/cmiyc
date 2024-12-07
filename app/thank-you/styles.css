@@ -1,0 +1,26 @@
+.thank-you-page {
+  text-align: center;
+}
+
+.thank-you-page .bg-gray-800 {
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.thank-you-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.thank-you-page ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #4a5568;
+}
+
+.thank-you-page ul li:last-child {
+  border-bottom: none;
+}
