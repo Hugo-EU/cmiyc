@@ -11,7 +11,42 @@ import AlertHelper from "@/app/helpers/alerts";
 import { useSearchParams, useRouter } from "next/navigation";
 
 const sections = [
-  // Tu definición de secciones permanece igual
+  {
+    id: "informacion-personal",
+    title: "Información Personal",
+    content: `
+      Yael Aquilino Días, más conocido como yazwick, es un artista emergente nacido en Madrid en el año 2003.
+      Yael tiene ascendencia africana, exactamente de la República Democrática del Congo. Al igual que sus raíces, practica la religión católica cristiana.
+      Su trayectoria académica es más que impecable. Graduado en Bachillerato de ciencias de la salud en el instituto IES 1º de Mayo.
+      Años más tarde se graduaría en producción musical en la academia SAE de Madrid.
+    `,
+  },
+  {
+    id: "carrera-musical",
+    title: "Carrera Musical",
+    content: `
+      El joven de 21 años, quien acaba de empezar en el mundo de la música, está causando sensación en el mundo de la música urbana.
+      Hizo su debut en las plataformas digitales con el sencillo de trap <a href='https://open.spotify.com/intl-es/album/3y2FrY68gA1isCFdaZVUnJ?si=geS3vNGITku7vsh_llC54A' target='_blank'>"P Hardaway"</a> el día 6 de junio de 2024.
+      Más adelante se atrevería con un pequeño EP en el que lanzaría dos singles: <a href='https://open.spotify.com/intl-es/album/3HBrazc2I4RSKurUVTI33c?si=voDw6gsKQYuO5uIksW7TJA' target='_blank'>"Fashionwick"</a> y <a href='https://open.spotify.com/intl-es/album/23rLl0U8M2fPQXUU6fLu0d?si=2YY-fsclSmuW8l8mz3UPfA' target='_blank'>"Rest in Peace"</a>.
+    `,
+  },
+  {
+    id: "influencias",
+    title: "Influencias",
+    content: `
+      El estilo fresco y renovado que trae el madrileño es culpa de la mezcla de diversas influencias a lo largo de su vida. Sus influencias más "raperas" son artistas como: JPEGMafia, Playboi Carti, A$AP Rocky, Travis Scott, Esqui o 44, entre otros.
+      Sin dejar atrás sus influencias culturales de parte de su familia de origen africano. El artista rescata su gran pasión por el Jazz que puede demostrar en las progresiones típicas de sus temas.
+      Wick es un apasionado de la moda, prefiriendo marcas como Rick Owens, Margiela, OffWhite y Ecler.
+    `,
+  },
+  {
+    id: "tropiezos",
+    title: "Tropiezos",
+    content: `
+      No todo ha sido camino de rosas en la vida de Yael. En su adolescencia pasó por un centro de menores debido a su acumulación de delitos leves, más tarde pasaría seis meses en la prisión de Alcalá Meco debido a escándalo público.
+      Actualmente, tras varios juicios fue resuelto como inocente y quedó sin antecedentes penales.
+    `,
+  },
 ];
 
 function HomeContent() {
@@ -28,6 +63,7 @@ function HomeContent() {
     fetchProducts();
   }, []);
 
+  
   useEffect(() => {
     const cookieWarning = searchParams.get("cookieWarning");
     if (cookieWarning === "true") {
