@@ -155,7 +155,6 @@ const SongsPage = () => {
 
   return (
     <>
-      <Header />
       <main className="parallax-container">
         {/* Banner */}
         {artistInfo && (

@@ -90,8 +90,6 @@ function HomeContent() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
-      <Header />
-
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center text-center bg-fixed">
         <video
@@ -241,8 +239,6 @@ function HomeContent() {
           ⬆
         </a>
       </div>
-
-      <Footer />
     </div>
   );
 }

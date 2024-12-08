@@ -84,7 +84,6 @@ const EventDetailPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <Header />
       <div className="container mx-auto p-6 mt-20">
         <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
           {event.imagePath && (
@@ -161,7 +160,6 @@ const EventDetailPage = () => {
           </a>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

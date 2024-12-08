@@ -124,7 +124,6 @@ const Store = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col">
-      <Header />
       <div className="store-container flex flex-col lg:flex-row">
         {/* Filters sidebar */}
         <div className="filters-container w-full lg:w-1/4 p-6 bg-gray-800 rounded mb-6 lg:mb-0">
@@ -281,7 +280,6 @@ const Store = () => {
         />
       )}
 
-      <Footer />
     </div>
   );
 

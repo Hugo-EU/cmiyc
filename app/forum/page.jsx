@@ -88,7 +88,6 @@ const ForumPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
-      <Header />
       <div className="container mx-auto p-6 mt-20 flex-grow">
         <h1 className="text-4xl font-extrabold mt-10 mb-10 text-center">Foro de Yazwick</h1>
 
@@ -151,7 +150,6 @@ const ForumPage = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 

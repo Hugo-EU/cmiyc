@@ -203,7 +203,6 @@ const EventsPage = () => {
     if (loading) return <p>Cargando...</p>;
     return (
         <div className="min-h-screen bg-gray-900 text-white">
-            <Header />
             <div className="container mx-auto p-6 mt-20">
                 <h1 className="text-4xl font-bold mb-8 text-center">Eventos del Yazwick</h1>
 

@@ -278,7 +278,6 @@ const TopicPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <Header />
       <h1 className="text-4xl font-extrabold text-center py-8 text-indigo-500">{topicData?.name}</h1>
       <div className="container mx-auto p-6">
         {!isRestrictedAndUser && (
@@ -421,7 +420,6 @@ const TopicPage = () => {
           );
         })}
       </div>
-      <Footer />
     </div>
   );
 };
